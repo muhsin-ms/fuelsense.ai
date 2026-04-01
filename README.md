@@ -1,42 +1,45 @@
-# FuelSense 2.0 - Trip Cost Projection Dashboard
+FuelSense AI – Smart Fuel Cost Intelligence System
 
-FuelSense is a smart, serverless web application designed to help Indian commuters estimate their trip costs accurately. It integrates Google Maps for routing and real-time infrastructure data.
+FuelSense AI is designed to solve the problem of inaccurate fuel cost estimation faced by daily commuters in India. Due to fluctuating fuel prices, varying vehicle mileage, and the absence of a simple unified calculator, users often struggle to plan travel budgets effectively. This leads to unexpected expenses and inefficient trip planning.
 
-## 🚀 Features
+FuelSense AI is a mobile-first, AI-assisted web application that calculates accurate fuel expenses for any trip in real time. Users can select their vehicle from an Indian vehicle database (bikes and cars), enter trip distance, and input or fetch current fuel prices. The system then instantly calculates the estimated total fuel cost.
 
-- **100+ Vehicle Profiles**: Pre-mapped data for Indian cars and two-wheelers.
-- **Dynamic Fuel Rates**: Scrapes live market prices for Petrol and Diesel.
-- **Smart Radar**: Automatically finds gas stations or EV charging points along your route.
-- **Best/Worst Case Projection**: Provides a price range based on traffic and driving conditions.
-- **GitHub Actions Ready**: Automated deployment to GitHub Pages.
+The application includes a clean dashboard with modules such as a fuel calculator, vehicle database management, and fuel rate management. It is designed to be responsive and works smoothly on both mobile and desktop devices.
 
-## 🛠️ Setup Instructions
+The key benefits of this project include fast and accurate fuel cost estimation, a simple and user-friendly interface, region-specific vehicle mileage data, and a scalable structure that allows future AI integration.
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/fuelsense.git
-   cd fuelsense
-   ```
+Google AI Usage
 
-2. **Configure API Keys**:
-   - Open `js/config.js`.
-   - Paste your **Google Maps API Key** into the `GOOGLE_MAPS_KEY` field.
-   - Alternatively, use the in-app settings menu to save keys locally in your browser.
+Tools / Models Used
 
-3. **Run Locally**:
-   Simply open `index.html` in any browser or use a local server:
-   ```bash
-   python -m http.server 8000
-   ```
+Google Gemini API (planned or optional integration)
+AI-assisted prompt engineering for system design
+AI-based logic suggestions for fuel calculation optimization
 
-## 📦 Deployment to GitHub Pages
+How Google AI Was Used
+Google AI was used during the planning and design phase of the project to improve system architecture and user experience. It helped in designing the fuel calculation logic, optimizing the dashboard layout, and improving user flow for better usability. It also provided ideas for future enhancements such as predictive fuel consumption and route optimization.
 
-This project is pre-configured for **GitHub Actions** deployment:
+Future planned AI features include driving behavior-based fuel prediction, intelligent route suggestions for fuel efficiency, and smart travel cost recommendations.
 
-1. Push your code to the `main` branch.
-2. In your GitHub Repo: Go to **Settings > Pages**.
-3. Under **Build and deployment > Source**, select **"GitHub Actions"**.
-4. Your site will be live at `https://your-username.github.io/your-repo-name/`.
+Proof of Google AI Usage
 
-## 🔒 Security Note
-If your repository is public, ensure you **do not** commit your API keys to `js/config.js`. Users should enter their own keys via the UI, which are stored securely in their `localStorage`.
+Project Screenshots<img width="3840" height="1080" alt="Screenshot 2026-04-01 045602" src="https://github.com/user-attachments/assets/db1a88ab-09f7-4709-95c4-90c4e409ad68" /><img width="1920" height="1080" alt="Screenshot 2026-04-01 045715" src="https://github.com/user-attachments/assets/7a7f04f9-037a-473b-b6c6-d168e23880de" />
+<img width="1920" height="1080" alt="Screenshot 2026-04-01 045626" src="https://github.com/user-attachments/assets/cd02d65e-3efd-46d9-b551-049706f606da" />
+
+
+
+Demo Video
+https://drive.google.com/file/d/1w-48Mnex79aboC0iBqQ_4GNnxMXhNHog/view?usp=drive_link
+Installation Steps
+
+# Clone the repository
+git clone <your-repo-link>
+
+# Go to project folder
+cd FuelSense-AI
+
+# Install dependencies
+npm install
+
+# Run the project
+npm start
